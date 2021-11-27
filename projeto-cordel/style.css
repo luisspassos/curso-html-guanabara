@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --FONT-HIGHLIGHTED: "Passion One", cursive;
+    --FONT-MAIN: Sriracha, sans-serif;
+    --FONT-SINGLE: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--FONT-HIGHLIGHTED);
+    font-size: 5em;
+}
+
+header > p {
+    font-family: var(--FONT-SINGLE);
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
