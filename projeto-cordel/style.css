@@ -14,11 +14,17 @@ header {
     background: black;
     color: white;
     text-align: center;
+    padding: 50px;
 }
 
 header > h1 {
     font-family: var(--FONT-HIGHLIGHTED);
-    font-size: 5em;
+    font-size: 7.1vw;
+    word-spacing: 10px;
+}
+
+header > h1 > span{
+    font-size: 1.4em;
 }
 
 header > p {
@@ -32,5 +38,59 @@ header > p > a {
 }
 
 header > p > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    font: 3.5vw var(--FONT-MAIN);
+    padding: 65px 30px;
+}
+
+main p {
+    line-height: 2em;
+    margin-bottom: 90px;
+}
+
+main > article > p {
+    display: inline-block;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(0, 0, 0, 0.534);
+    margin: 60px 30px;
+    padding: 5px;
+}
+
+main > article {
+   margin: 90px -30px;
+   box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.432);
+}
+
+main > article:nth-of-type(1) {
+    background: black url(assets/ladybug_background.jpg) 80% 15%/cover fixed;
+}   
+
+main > article:nth-of-type(2) {
+    background: black url(assets/paper_background.jpg) top left/ cover fixed;
+
+}
+
+footer {
+    background: black;
+    padding: 10px 0;
+}
+
+footer > p {
+    color: white;
+    font-family: var(--FONT-SINGLE);
+    text-align: center;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
     text-decoration: underline;
 }
