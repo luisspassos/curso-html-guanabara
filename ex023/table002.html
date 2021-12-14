@@ -4,23 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Use of large tables</title>
+    <title>Tables</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        table {
+            max-width: 700px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead, tfoot {
+            background-color: lightgrey;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightcyan;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: lightgoldenrodyellow;
+        }
+
+        tbody tr td:nth-child(3) {
+            padding-right: 0;
+        }
+    </style>
 </head>
 <body>
+    <h1>Use of large tables</h1>
+
     <table>
         <thead>
             <tr>
                 <th>Posição</th>
                 <th>Unidade federativa</th>
                 <th>População</th>
+                <th>% da pop. total</th>
+                <th>País comparável (habitantes)</th>
             </tr>
         </thead>
         <tbody>
 
-        </tbody>
-        <tfoot>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td>46 649 132</td>
+                <td>21,9%</td>
+                <td>Espanha (46 439 864)</td>
+            </tr>
 
-        </tfoot>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td>21 411 923</td>
+                <td>10,1%</td>
+                <td>Sri Lanka (20 675 000)</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>17 463 349</td>
+                <td>8,2%</td>
+                <td>Países Baixos (16 922 900)</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>17 463 349</td>
+                <td>8,2%</td>
+                <td>Países Baixos (16 922 900)</td>
+            </tr>
+
+
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>17 463 349</td>
+                <td>8,2%</td>
+                <td>Países Baixos (16 922 900)</td>
+            </tr>
+
+
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>17 463 349</td>
+                <td>8,2%</td>
+                <td>Países Baixos (16 922 900)</td>
+            </tr>
+
+
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>17 463 349</td>
+                <td>8,2%</td>
+                <td>Países Baixos (16 922 900)</td>
+            </tr>
+
+
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>17 463 349</td>
+                <td>8,2%</td>
+                <td>Países Baixos (16 922 900)</td>
+            </tr>
+
+
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>777 777 777</td>
+            </tr>
+        </tfoot> -->
     </table>
 </body>
 </html>
