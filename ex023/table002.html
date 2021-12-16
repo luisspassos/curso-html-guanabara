@@ -51,19 +51,27 @@
         tbody tr td:nth-child(3) {
             padding-right: 0;
         }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Use of large tables</h1>
-
     <table>
+        <caption>
+            Tabela das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade federativa</th>
-                <th>População</th>
-                <th>% da pop. total</th>
-                <th>País comparável (habitantes)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">População</th>
+                
+                <th scope="col">% da pop. total</th>
+                <th scope="col"> País comparável (habitantes)</th>
             </tr>
         </thead>
         <tbody>
@@ -138,12 +146,7 @@
 
 
         </tbody>
-        <!-- <tfoot>
-            <tr>
-                <th>Total de habitantes</th>
-                <td>777 777 777</td>
-            </tr>
-        </tfoot> -->
+        
     </table>
 </body>
 </html>
